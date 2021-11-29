@@ -1,6 +1,6 @@
 {
-  "name": "ngX-Rocket",
-  "short_name": "ngX-Rocket",
+  "name": "Lavanda",
+  "short_name": "Lavanda",
   "theme_color": "#488aff",
   "background_color": "#488aff",
   "display": "standalone",
@@ -8,14 +8,8 @@
   "start_url": "./",
   "icons": [
     {
-      "src": "assets/ngx-rocket-logo.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/ngx-rocket-logo@192.png",
-      "sizes": "192x192",
+      "src": "assets/favicon-128.png",
+      "sizes": "128x128",
       "type": "image/png",
       "purpose": "maskable any"
     }

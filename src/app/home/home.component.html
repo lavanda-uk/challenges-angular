@@ -1,10 +1,13 @@
-<div class="container-fluid">
-  <div class="jumbotron text-center">
+<div class="">
+  <div class="">
     <h1>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
-      <span translate>Hello world !</span>
+      <a href="https://api.chucknorris.io/">
+        <img class="logo" src="assets/chucknorris_logo.png" alt="chucknorris logo" />
+      </a>
+      <span>Chuck Norris Quotes</span>
     </h1>
+    <q>Google won't search for Chuck Norris because it knows you don't find Chuck Norris, he finds you</q>
     <app-loader [isLoading]="isLoading"></app-loader>
-    <q [hidden]="isLoading">{{ quote }}</q>
+    <app-quotes></app-quotes>
   </div>
 </div>

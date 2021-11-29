@@ -28,7 +28,7 @@ describe('QuoteService', () => {
       const mockQuote = { value: 'a random quote' };
 
       // Act
-      const randomQuoteSubscription = quoteService.getRandomQuote({ category: 'toto' });
+      const randomQuoteSubscription = quoteService.getRandomQuotes();
 
       // Assert
       randomQuoteSubscription.subscribe((quote: string) => {
