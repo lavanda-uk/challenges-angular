@@ -11,5 +11,9 @@ export class QuotesComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  public ngOnInit(): void {}
+
+  public sortByDate(): void {}
+
+  public sortByUpVotes(): void {}
 }

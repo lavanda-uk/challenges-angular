@@ -3,9 +3,8 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { SharedModule } from '@shared';
 import { QuotesComponent } from './quotes.component';
-import { QuoteService } from './quote.service';
 
-describe('HomeComponent', () => {
+describe('QuotesComponent', () => {
   let component: QuotesComponent;
   let fixture: ComponentFixture<QuotesComponent>;
 
@@ -14,7 +13,7 @@ describe('HomeComponent', () => {
       TestBed.configureTestingModule({
         imports: [SharedModule, HttpClientTestingModule],
         declarations: [QuotesComponent],
-        providers: [QuoteService],
+        providers: [],
       }).compileComponents();
     })
   );
