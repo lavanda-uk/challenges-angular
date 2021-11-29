@@ -13,17 +13,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>Quote 1 title</td>
-        <td>Quote 1 Upvotes</td>
-        <td>Quote 1 Date</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Quote 2 title</td>
-        <td>Quote 2 Upvotes</td>
-        <td>Quote 2 Date</td>
+      <tr *ngFor="let quote of quotes; let index = index">
+        <td>{{ index + 1 }}</td>
+        <td>{{ quote.quote }}</td>
+        <td>{{ quote.upVotes }}</td>
+        <td>{{ quote.date }}</td>
       </tr>
     </tbody>
   </table>

@@ -10,6 +10,6 @@
   <div class="content">
     <q>Google won't search for Chuck Norris because it knows you don't find Chuck Norris, he finds you</q>
     <app-loader [isLoading]="isLoading"></app-loader>
-    <app-quotes></app-quotes>
+    <app-quotes [quotes]="quotes" *ngIf="!isLoading"></app-quotes>
   </div>
 </div>
