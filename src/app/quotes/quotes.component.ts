@@ -13,7 +13,15 @@ export class QuotesComponent implements OnInit {
 
   public ngOnInit(): void {}
 
-  public sortByDate(): void {}
+  public sortByDate(): void {
+    this.quotes.sort((a: Quote, b: Quote) => {
+      return a.date < b.date ? 1 : -1;
+    });
+  }
 
-  public sortByUpVotes(): void {}
+  public sortByUpVotes(): void {
+    this.quotes.sort((a: Quote, b: Quote) => {
+      return b.upVotes - a.upVotes;
+    });
+  }
 }
