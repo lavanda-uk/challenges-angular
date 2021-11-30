@@ -3,8 +3,7 @@ import { Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 
 export interface Quote {
-  iconUrl?: string;
-  id?: string;
+  id: string;
   quote: string;
   upVotes: number;
   date: string;
